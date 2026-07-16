@@ -1,0 +1,23 @@
+# Keep real multilingual corpora and scans local unless licensing permits sharing.
+data/raw/
+data/interim/
+data/processed/
+
+# Generated outputs
+outputs/results/*
+outputs/reports/*
+outputs/figures/*
+outputs/audit/*
+!outputs/.gitkeep
+
+# Python and notebook artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.ipynb_checkpoints/
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/
