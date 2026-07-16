@@ -1,0 +1,14 @@
+seed: 42
+top_k: 5
+noise_rates: [0.0, 0.08, 0.16]
+corpus:
+  languages: [urdu, arabic, english, roman_urdu, regional_placeholder]
+  synthetic_only: true
+retrieval:
+  baselines: [tfidf_char_xlingual, bm25_xlingual, hybrid_lexical_xlingual]
+  future_embedding_adapters: [multilingual-e5, LaBSE, multilingual-MiniLM]
+evaluation:
+  metrics: [top1_accuracy, top3_accuracy, mrr, citation_coverage, unsupported_claim_score, language_fairness_gap]
+safety:
+  real_corpora_committed: false
+  benchmark_claims_without_execution: false
